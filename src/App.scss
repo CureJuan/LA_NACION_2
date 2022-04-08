@@ -1,0 +1,251 @@
+@import "components/Header/styles.scss";
+@import "components/Footer/styles.scss";
+@import "components/Article/styles.scss";
+@import "components/Submenu//styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@300&display=swap");
+
+hr {
+  margin-bottom: 22px;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "footer footer footer ";
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+  padding: 3px 10px 0 0;
+}
+
+h2 {
+  margin-left: 16px;
+}
+
+.card {
+  width: 350px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.red {
+  background-color: #a1282a;
+  color: white;
+}
+
+.news {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.adv {
+  width: 294px;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.card-container {
+  padding: 16px;
+}
+
+.space {
+  padding: 10px;
+}
+
+.image {
+  height: 250px;
+  max-width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.category {
+  transition: 0.3s;
+  color: #00538c;
+  font-size: 20px;
+}
+
+.h3 {
+  font-size: 26px;
+  margin: 8px 0;
+}
+
+.p {
+  margin: 8px 0;
+  font-size: 17px;
+  color: #5f5f5f;
+  font-weight: 700;
+}
+
+.font {
+  font-family: $font-style;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33334%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 50px;
+  background-color: #fff;
+}
+
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 400px 790px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: SuecaSlab;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: SuecaSlab, Georgia, "serif";
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.font-primary {
+  font-family: "SuecaSlab", "Georgia", "serif";
+  font-size: 30px;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+.font-secondary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  color: #181818;
+  font-style: normal;
+}
+
+.font-primary-bold {
+  padding-top: 15px;
+  font-family: "SuecaSlab";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 400px;
+    padding: 16px;
+  }
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 500px;
+  }
+  .image-xl {
+    height: 200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+  }
+  main {
+    display: grid;
+    grid-template-areas: "header" "section" "footer ";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 400px;
+    padding: 16px;
+  }
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px;
+  }
+  .image-xl {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    display: grid;
+    grid-template-areas: "header" "section" "footer ";
+  }
+}
+.imagen_title {
+  width: 20px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.png {
+  width: 170px;
+}
+.card_tags {
+  border: solid 1px black;
+  padding: 10px;
+}

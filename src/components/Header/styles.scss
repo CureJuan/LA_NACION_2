@@ -1,0 +1,255 @@
+@import "../../scss/base/variables";
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 16px 10px;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.8);
+  order: 0;
+  align-self: stretch;
+  margin: 0px 0px;
+  border: 1px solid rgb(167, 166, 166);
+  font-family: "Arial";
+  justify-content: space-evenly;
+}
+
+// LOGO //
+.logo {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $color;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+//BOTON SUBSCRIPCION //
+.btn_subsc {
+  background: #ffff24;
+  color: #000;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.btn_subsc:hover {
+  color: #e4e3e3;
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+//BOTONES SECCIONES Y BUSCAR //
+.btn_secciones {
+  border-color: #f2f2f2;
+  color: #272727;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.btn_secciones:hover {
+  color: $color;
+}
+.btn_buscar {
+  border-color: #f2f2f2;
+  color: #272727;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.btn_buscar:hover {
+  color: $color;
+}
+
+// BOTON INGRESAR //
+.btn_ingresar {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1rem;
+  color: $color;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid #0250c9;
+  text-transform: uppercase;
+}
+.btn_ingresar:hover {
+  color: #e4e3e3;
+  background-color: $color;
+  cursor: pointer;
+}
+//SUB MENU //
+
+.sub_menu {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1px;
+  margin: 0;
+  text-align: center;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(192, 192, 192);
+}
+.sub_menu ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.sub_menu ul li {
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.menu {
+  font-size: 20px;
+}
+.lupa {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn_subsc {
+    color: $color;
+    background-color: transparent;
+    border: none;
+  }
+  .btn_ingresar {
+    visibility: hidden;
+  }
+
+  .btn_secciones {
+    visibility: hidden;
+  }
+  .menu {
+    visibility: visible;
+  }
+  .btn_buscar {
+    visibility: hidden;
+  }
+  .lupa {
+    visibility: visible;
+  }
+  .sub_menu li a {
+    visibility: hidden;
+  }
+}
+
+// MENU LATERAL //
+
+.sidepanel {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  .logo_menu {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $color;
+    font-family: "Times New Roman";
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* LINKS DEL MENU */
+.sidepanel a {
+  padding: 5px 5px 5px 3px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: $color;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-color: #f2f2f2;
+  color: #272727;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.openbtn:hover {
+  color: $color;
+}
+
+//
+
+@media (min-width: 769px) {
+  .wrap-dropdown .com-dropdown {
+    width: 280px;
+    max-height: 100vh;
+    background: #fff;
+    border: none;
+  }
+}

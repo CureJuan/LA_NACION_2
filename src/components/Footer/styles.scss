@@ -1,0 +1,134 @@
+@import "../../scss/base/variables";
+
+.site-footer {
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+  font-size: 17px;
+  color: #979696;
+}
+.logo {
+  text-align: center;
+  cursor: pointer;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-links li {
+  text-decoration: none;
+  display: inline;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+}
+.footer-links a {
+  color: $color;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+  text-align: center;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: center;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+.site-footer .social-icons a {
+  background-color: transparent;
+  line-height: 42px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.copyright-text {
+  font-family: Aie;
+  color: #33353d;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+}
+@media (max-width: 991px) {
+  .site-footer [className^="col-"] {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #000000;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 8px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: rgb(133, 132, 132);
+}
+.social-icons a.facebook:hover {
+  color: rgb(133, 132, 132);
+}
+.social-icons a.twitter:hover {
+  color: rgb(133, 132, 132);
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}

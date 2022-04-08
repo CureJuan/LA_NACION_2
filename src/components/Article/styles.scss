@@ -1,0 +1,21 @@
+.card__separation {
+  margin-bottom: 12px;
+  padding: 15px;
+  margin-right: 20px;
+  .card-title__color {
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.card__color {
+  width: 100rem;
+  min-width: 100px;
+}
+
+.fecha {
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: 15px;
+}
